@@ -1,0 +1,42 @@
+{
+  "name": "thbundle-backend",
+  "version": "1.0.0",
+  "description": "T&H BUNDLE - VTU Platform Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "firebase-admin": "^12.1.0",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "joi": "^17.13.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "otplib": "^12.0.1",
+    "pdfkit": "^0.15.0",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.3",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.3.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0"
+  }
+}
